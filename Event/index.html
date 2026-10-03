@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Inline Element</h1>
+    <button id="myBtn1" onclick="alert('Hello')">Click me</button>
+    <button id="myBtn2" ondblclick="alert('Hello')">Click me</button>
+
+    <button id="myBtn3">Click Me</button>
+
+    <script>
+      document.getElementById("myBtn1").onClick = function () {
+        alert("hello");
+      };
+      document.getElementById("myBtn2").onmouseover = () => {
+        alert("hello world");
+      };
+
+      document
+        .getElementById("myBtn3")
+        .addEventListener("dblclick", function () {
+          alert("hello mouse");
+        });
+    </script>
+  </body>
+</html>
